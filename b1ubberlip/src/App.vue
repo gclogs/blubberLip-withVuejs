@@ -1,15 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NotFound msg="Welcome to Your Vue.js App"/>
+  <RouterView />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NotFound from './pages/NotFoundpage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NotFound
   }
 }
 </script>
