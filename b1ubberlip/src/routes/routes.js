@@ -1,7 +1,21 @@
+import { createRouter, createWebHistory } from 'vue-router';
+
+import Main from '../pages/Main.vue';
+import HelloWorld from '../components/HelloWorld.vue';
+// import Products from '../pages/Products.vue'
 import NotFound from '../pages/NotFoundPage.vue';
 
-const route = [
-    { path: '*', component: NotFound }
+const routes = [
+    {
+        path: "/",
+        component: Main,
+    },
+    { path: '/:404(.*)', component: NotFound }
 ]
 
-export default route;
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
+
+export default router;

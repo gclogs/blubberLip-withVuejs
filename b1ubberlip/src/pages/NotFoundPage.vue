@@ -1,13 +1,15 @@
 <template>
     <div class="container">
-        <p>404</p>
-        <p>Pages Not Found</p>
+        <div class="inner">
+            <p>404</p>
+            <p>Page Not Found</p>
+        </div>
     </div>
-</tempalte>
+</template>
 
 <script>
 export default {
-  name: 'NotFoundPage'
+    name: 'NotFoundPage'
 }
 </script>
 

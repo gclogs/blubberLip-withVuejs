@@ -1,4 +1,17 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp, Vue } from 'vue'
+import App from './App.vue';
 
-createApp(App).mount('#app')
+// router setup
+import route from './routes/routes.js';
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+/* add font awesome icon component */
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+Vue.config.productionTip = false
+
+createApp(App)
+    .use(route)
+    .mount('#app');

@@ -13,5 +13,6 @@ module.exports = defineConfig({
       host: 'localhost',
       port: 8080
     }
-  }
+  },
+  lintOnSave: false
 })
