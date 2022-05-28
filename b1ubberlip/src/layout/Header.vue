@@ -6,8 +6,12 @@
             </div>
             <div class="nav justify-content-end">
                 <div class="search">
-                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-                    <a href="#" class="nav-link">검색</a>
+                    <a href="#" class="nav-link">
+                        <font-awesome-icon 
+                            icon="magnifying-glass" 
+                            size="10px"/>
+                        <span>검색</span>
+                    </a>
                 </div>
                 <div class="profile dropdown">
                     <a href="#" class="nav-link" id="dropdownMenu" aria-expanded="false">프로필</a>
@@ -32,10 +36,9 @@ export default {
 <style lang="scss" scoped>
 .container-fluid {
     .search {
-        position: relative;
-        font-awesome-icon {
-            font-size: 30px;
-            position: absolute;   
+        .fa-magnifying-glass {
+            padding-bottom: 2px;
+            margin-right: 4px;
         }
     }
     .nav-link {
