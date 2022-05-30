@@ -5,11 +5,21 @@ import App from './App.vue';
 import route from './routes/routes.js';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faMagnifyingGlass, faArrowRight);
+import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons/faArrowRight';
+import { faBagShopping } from '@fortawesome/free-solid-svg-icons/faBagShopping';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass'
+
+import { faRegularUser } from '@fortawesome/free-regular-svg-icons/faUser';
+
+library.add(
+    faMagnifyingGlass, 
+    faArrowRight, 
+    faUser,
+    faBagShopping
+);
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon) /* add font awesome icon component */

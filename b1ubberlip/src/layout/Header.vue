@@ -7,16 +7,29 @@
                 </a>
             </div>
             <div class="nav justify-content-end">
-                <div class="search">
-                    <a href="#" class="nav-link">
-                        <font-awesome-icon 
+                <div class="search nav-link">
+                    <a href="#">
+                        <font-awesome-icon
+                            alt="검색"
                             icon="magnifying-glass" 
                             size="10px"/>
-                        <span>검색</span>
                     </a>
                 </div>
-                <div class="profile dropdown">
-                    <a href="#" class="nav-link" id="dropdownMenu" aria-expanded="false">프로필</a>
+                <div class="basket nav-link">
+                    <a href="#">
+                        <font-awesome-icon
+                            alt="장바구니"
+                            icon="bag-shopping" 
+                            size="10px"/>
+                    </a>
+                </div>
+                <div class="profile nav-link dropdown">
+                    <a href="#" id="dropdownMenu" aria-expanded="false">
+                        <font-awesome-icon 
+                            alt="프로필"
+                            icon="user" 
+                            size="10px"/>
+                    </a>
                     <ul
                         v-for="nav in navigations"
                         :key="nav.name"
@@ -59,7 +72,7 @@ export default {
                 }
             ]
         }
-    }
+    },
 };
 </script>
 
@@ -70,6 +83,7 @@ export default {
     border-bottom: 1px solid $section-color;
 }
 .container-fluid {
+    padding: 0rem 10rem;
     margin-bottom: 10px;
 
     a {
@@ -82,24 +96,22 @@ export default {
             font-size: 20px;
         }
     }
-    .search {
-        .fa-magnifying-glass {
-            padding-bottom: 2px;
-            margin-right: 4px;
-        }
-    }
     .nav-link {
-        padding: 6px 12px;
-        &:hover {
-            transition: .2s;
-            color: $color002;
+        padding: .4rem .6rem;
+        a {
+            &:hover {
+                transition: .2s;
+                color: $color002;
+            }
         }
-
     }
 
     @include media-breakpoint-down(sm) {
-        .navbar {
-            padding: 4px 8px;
+        .container-fluid {
+            font-size: 100px;
+            .navbar {
+                padding: 4px 8px;
+            }
         }
     }
 }

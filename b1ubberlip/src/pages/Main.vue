@@ -1,7 +1,12 @@
 <template>
-    <div class="container-fluid">
-        계절별 BEST 상품
+    <div class="container-fluid"> 
+        <img 
+            src="https://mblogthumb-phinf.pstatic.net/20160122_174/cofls2016_1453454595191q983f_GIF/%28DFSD1%29.gif?type=w2"
+            class="img-fluid"
+            alt="모델" 
+        /> 
     </div>
+
     <div class="navbar justify-content-center">
         <a href="#">
         <div class="text">
@@ -24,13 +29,12 @@ export default {
 
 <style lang="scss" scoped>
 .container-fluid {
-    padding: 0px 30px;
 }
 .navbar {
         color: $color001;
         background-color: $color003;
         a {
-            color: white;
+            color: black;
         }
     }
 </style>
